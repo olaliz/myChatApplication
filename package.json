@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A Group Chat Application using node.js, mongodb, express and socket.io",
   "main": "index.js",
-  "engine": {
+  "engines": {
   	"node": "8.9.x",
-  	"npm": "5.6.x"
+  	"npm": "5.7.1"
 
   },
   "scripts": {
