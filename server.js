@@ -21,9 +21,7 @@ const container = require('./container');
 container.resolve(function(users, _, admin, home, group, results, privatechat, profile, interest){
   
    mongoose.Promise = global.Promise;
-   mongoose.connect('mongodb://admin:password@ds163836.mlab.com:63836/mychatapplication', 
-   {useMongoClient: true});
-//  mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});
+   mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});
 
 
     const  app = SetupExpress();
@@ -81,8 +79,7 @@ container.resolve(function(users, _, admin, home, group, results, privatechat, p
              app.use(validator());
              
              app.use(session({
-                  secret: 'myonesecretkey',
-                //  secret: process.env.SECRET_KEY,
+                  secret: process.env.SECRET_KEY,
                   resave: false,
                   saveInitialized: false,
                   store: new MongoStore({mongooseConnection: mongoose.connection})
