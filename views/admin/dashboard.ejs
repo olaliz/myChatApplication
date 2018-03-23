@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="/uploads/favicon.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="container logo-container">
+        <div class="row">
+            <div class="col-md-12">
+                    <nav class="navbar" id="nav_bar" role="navigation">
+
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle navbar_icon" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span> 
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <h1 class="logo-div">
+                                <a href="/">Chatting</a>
+                            </h1>
+                        </div>
+                        <h2>Welcome to the Admin Page</h2>
+                </nav>
+            </div>
+        </div>
+    </div>
+ 
+<div id="main">
+         <div class="container">
+   
+       <form style="align:center;"  action="/dashboard" method="post">
+          <input type="text" name="department" placeholder="Department">
+          <input type="text" name="faculty" placeholder="Faculty">
+          
+          <button class="btn btn-lg upload-btn" type="button">Upload File</button>
+          <input type="file" name="upload" id="upload-input" style="display:none">
+          
+          <button>Add Group</button>
+           
+       </form>
+    </div>    
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<script src="/js/upload.js"></script>   
+</body>
+</html>
