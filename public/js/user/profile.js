@@ -42,7 +42,7 @@ $(document).ready(function(){
         if(upload === ''){
             $('#add-input').val(image);
         }
-   /*     
+        
         if(username == '' || fullname == '' || country == '' || gender == '' || mantra == ''){
             valid = false;
             $('#error').html('<div class="alert alert-danger">You cannot submit an empty field</div>');
@@ -50,7 +50,7 @@ $(document).ready(function(){
             upload = $('#add-input').val();
             $('#error').html('');
         }
-  */      
+        
         if(valid == true){
             $.ajax({
                 url: '/settings/profile',
@@ -86,55 +86,4 @@ function ShowImage(input){
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
