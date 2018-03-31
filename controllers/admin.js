@@ -7,7 +7,7 @@ module.exports = function(formidable, Lifestyle) {
           SetRouting: function(router) {
                router.get('/dashboard', this.adminPage);
                
-               router.post('/uploadFile', aws.Upload.any(), this.uploadFile);
+               router.post('/uploadFile', this.uploadFile);
                router.post('/dashboard', this.adminPostPage);
           },
           
