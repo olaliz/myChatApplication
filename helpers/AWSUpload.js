@@ -14,7 +14,7 @@ const s0 = new AWS.S3({});
 const upload = multer({
     storage: multerS3({
          s3: s0,
-         bucket: 'mychatapplication',
+         bucket: 'mychatproject',
          acl: 'public-read',
          metadata: function (req, file, cb){
              cb(null, {fieldName: file.fieldname});

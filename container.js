@@ -12,7 +12,7 @@ const simpleDependencies = [
        ['Users', './models/user'],
        ['Message', './models/message'],
        ['Group', './models/groupmessage'],
-     //  ['aws', './helpers/AWSUpload']
+       ['aws', './helpers/AWSUpload']
     ];
     
 simpleDependencies.forEach(function(val){
