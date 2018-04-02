@@ -1,7 +1,5 @@
-const path = require('path');
-const fs = require('fs');
 
-module.exports = function(async, Users, Message, formidable, FriendResult){
+module.exports = function(async, Users, Message, aws, formidable, FriendResult){
     return {
         SetRouting: function(router){
             router.get('/settings/profile', this.getProfilePage);
@@ -115,14 +113,8 @@ module.exports = function(async, Users, Message, formidable, FriendResult){
          
          userUpload: function(req, res) {
             const form = new formidable.IncomingForm();
-            form.uploadDir = path.join(__dirname, '../public/uploads');
             
-            form.on('file', (field, file) => {
-            fs.rename(file.path, path.join(form.uploadDir, file.name), (err) => {
-                  if(err) throw err;
-                  console.log('File renamed successfully');
-              })
-            });
+            form.on('file', (field, file) => {});
             
             form.on('error', (err) => {});
             
