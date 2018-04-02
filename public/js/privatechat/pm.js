@@ -13,7 +13,7 @@ $(document).ready(function(){
       socket.on('connect', function(){
             var params = {
                  room1: paramOne,
-                 roomTwo: paramTwo
+                 room2: paramTwo
             }
             
             socket.emit('join PM', params);

@@ -95,7 +95,7 @@ module.exports = function(async, Users, Message, FriendResult){
                           
                           newMessage.save((err, result) => {
                                if(err){
-                                   return next(err)
+                                   return next(err);
                                }
                                callback(err, result);
                           })
