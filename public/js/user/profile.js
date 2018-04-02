@@ -43,10 +43,11 @@ $(document).ready(function(){
             $('#add-input').val(image);
         }
         
-        if(username == '' || fullname == '' || country == '' || gender == '' || mantra == ''){
-            valid = false;
-            $('#error').html('<div class="alert alert-danger">You cannot submit an empty field</div>');
-        }else{
+   //     if(username == '' || fullname == '' || country == '' || gender == '' || mantra == ''){
+   //         valid = false;
+   //         $('#error').html('<div class="alert alert-danger">You cannot submit an empty field</div>');
+   //     }
+        else{
             upload = $('#add-input').val();
             $('#error').html('');
         }
