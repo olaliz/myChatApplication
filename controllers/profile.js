@@ -4,7 +4,7 @@ module.exports = function(async, Users, Message, aws, formidable, FriendResult){
         SetRouting: function(router){
             router.get('/settings/profile', this.getProfilePage);
             
-            router.post('/userupload', this.userUpload);
+            router.post('/userupload',  aws.Upload.any(), this.userUpload);
             router.post('/settings/profile', this.postProfilePage);   
             
             router.get('/profile/:name', this.overviewPage);
