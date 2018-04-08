@@ -57,7 +57,7 @@ module.exports = function(async, Users, Message, aws, formidable, FriendResult){
                       const result1 = results[0];
                       const result2 = results[1];
                       
-                     res.render('user/profile', {title: 'Chatting - Profile', user:req.user, data: result1, chat: result2});  
+                     res.render('user/profile', {title: 'WeChat - Profile', user:req.user, data: result1, chat: result2});  
                });
          },
          
@@ -170,7 +170,7 @@ module.exports = function(async, Users, Message, aws, formidable, FriendResult){
                 const result1 = results[0];
                 const result2 = results[1];
                 
-                res.render('user/overview', {title: 'Chatting - Overview', user:req.user, data: result1, chat:result2});
+                res.render('user/overview', {title: 'WeChat - Overview', user:req.user, data: result1, chat:result2});
             });
         },
         

@@ -81,7 +81,7 @@ module.exports = function(async, Lifestyle, _, Users, Message, FriendResult){
                   
                   const facultySort = _.sortBy(res2, '_id');
                   
-                  res.render('home', {title: 'Chatting - Home', user: req.user, chunks: dataChunk, 
+                  res.render('home', {title: 'WeChat - Home', user: req.user, chunks: dataChunk, 
                   faculty: facultySort, data: res3, chat: res4});
               })
             },
