@@ -18,13 +18,9 @@ $(document).ready(function(){
        
         socket.emit('join PM', params);
         
-        socket.on('message display', function(){
-            $('#reload').load(location.href + ' #reload');
-        });
+       
         
-        socket.on('new refresh', function(){
-            $('#reload').load(location.href + ' #reload');
-        });
+        
     });
     
     socket.on('new message', function(data){
@@ -36,6 +32,15 @@ $(document).ready(function(){
         
         $('#messages').append(message);
     });
+    
+     socket.on('message display', function(){
+            $('#reload').load(location.href + ' #reload');
+        });
+        
+        socket.on('new refresh', function(){
+            $('#reload').load(location.href + ' #reload');
+        });
+        
     
     $('#message_form').on('submit', function(e){
         e.preventDefault();
