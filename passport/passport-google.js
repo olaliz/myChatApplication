@@ -18,7 +18,7 @@ passport.deserializeUser((id, done) => {
 passport.use(new GoogleStrategy({
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-        callbackURL: 'http://www.lizochat.com/oauth2callback',
+        callbackURL: 'http://www.mychatproject.herokuapp.com/oauth2callback',
         passReqToCallback: true
         
  },  (req, accessToken, refreshToken, profile, done) => {   
