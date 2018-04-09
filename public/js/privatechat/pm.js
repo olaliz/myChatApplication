@@ -18,13 +18,13 @@ $(document).ready(function(){
        
         socket.emit('join PM', params);
         
- //        socket.on('message display', function(){
- //           $('#reload').load(location.href + ' #reload');
- //       });
+         socket.on('message display', function(){
+            $('#reload').load(location.href + ' #reload');
+        });
         
- //       socket.on('new refresh', function(){
- //           $('#reload').load(location.href + ' #reload');
- //       });
+         socket.on('new refresh', function(){
+            $('#reload').load(location.href + ' #reload');
+        });
         
     });
     
