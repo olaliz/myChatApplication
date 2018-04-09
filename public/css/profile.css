@@ -22,7 +22,7 @@
 }
 
 .profile-usertitle-name {
-    color: #3fbfb2;
+    color: #9351D6;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 7px;
@@ -30,7 +30,7 @@
 
 .profile-usertitle-job {
     text-transform: lowercase;
-    color: #3fbfb2;
+    color: #9351D6;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -62,8 +62,8 @@
 }
 
 .profile-usermenu ul li a:hover {
-    background-color: #3fbfb2;
-    color: #3fbfb2;
+    background-color: #9351D6;
+    color: #9351D6;
 }
 
 .profile-usermenu ul li.active {
@@ -71,9 +71,9 @@
 }
 
 .profile-usermenu ul li.active a {
-    color: #3fbfb2;
+    color: #9351D6;
     background-color: #f6f9fb;
-    border-left: 2px solid #3fbfb2;
+    border-left: 2px solid #9351D6;
     margin-left: -2px;
 }
 
@@ -91,8 +91,8 @@
 }
 
 .save-profile-btn {
-    background: #3fbfb2;
-    border: #3fbfb2;
+    background: #9351D6;
+    border: #9351D6;
     width: 100%;
     text-shadow: none;
     color: white;

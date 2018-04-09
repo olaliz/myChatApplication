@@ -51,7 +51,7 @@ module.exports = function(async, Users, Message, FriendResult){
                       const result1 = results[0];
                       const result2 = results[1];
                       
-                     res.render('user/interest', {title: 'WeChat - Interest', user:req.user,
+                     res.render('user/interest', {title: 'lizochat - Interest', user:req.user,
                       data: result1, chat: result2});  
                });
          },

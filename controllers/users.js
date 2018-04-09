@@ -22,7 +22,7 @@ module.exports = function(_, passport, User){
             
             indexPage: function(req, res){
                 const errors = req.flash('error');
-                return res.render('index', {title: 'WeChat | Login', messages: errors, hasErrors: errors.length > 0});
+                return res.render('index', {title: 'lizochat | Login', messages: errors, hasErrors: errors.length > 0});
             },
             
             postLogin: passport.authenticate('local.login', {
@@ -34,7 +34,7 @@ module.exports = function(_, passport, User){
             
             getSignUp: function(req, res){
                const errors = req.flash('error');
-               return res.render('signup', {title: 'WeChat | SignUp', messages: errors, hasErrors: errors.length > 0});
+               return res.render('signup', {title: 'lizochat | SignUp', messages: errors, hasErrors: errors.length > 0});
           },
             
             postSignUp: passport.authenticate('local.signup', {

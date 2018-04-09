@@ -65,7 +65,7 @@ module.exports = function(async, Users, Message, FriendResult){
                 const nameParams = params[0];
                 
                       
-                      res.render('private/privatechat', {title: 'WeChat - Private Chat', user: req.user, data: result1, chat: result2, chats: result3, name: nameParams});
+                      res.render('private/privatechat', {title: 'lizochat - Private Chat', user: req.user, data: result1, chat: result2, chats: result3, name: nameParams});
                });       
             },
             

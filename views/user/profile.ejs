@@ -50,20 +50,20 @@
                                     <div class="profile-usermenu">
                                         <ul class="nav">
                                             <li class="active">
-                                                <a href="/settings/profile" style="color:#3fbfb2 !important">
-                                                    <i class="fa fa-user" style="color:#3fbfb2 !important"></i>
+                                                <a href="/settings/profile" style="color:#9351D6 !important">
+                                                    <i class="fa fa-user" style="color:#9351D6 !important"></i>
                                                     Profile
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/settings/interest" style="color:#3fbfb2 !important">
-                                                    <i class="fa fa-check" style="color:#3fbfb2 !important"></i>
+                                                <a href="/settings/interest" style="color:#9351D6 !important">
+                                                    <i class="fa fa-check" style="color:#9351D6 !important"></i>
                                                     Interest
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/profile/<%= user.username%>" style="color:#3fbfb2 !important">
-                                                    <i class="fa fa-home" style="color:#3fbfb2 !important"></i>
+                                                <a href="/profile/<%= user.username%>" style="color:#9351D6 !important">
+                                                    <i class="fa fa-home" style="color:#9351D6 !important"></i>
                                                     Overview
                                                 </a>
                                             </li>
@@ -87,7 +87,7 @@
 
                             <form class="form" role="form" method="POST" id="form" action="#">
 
-                                <h3 style="margin-top:0px; color:#3fbfb2 !important">Personal Information</h3>
+                                <h3 style="margin-top:0px; color:#9351D6 !important">Personal Information</h3>
                                 <hr />
                                 <div class="row">
                                     <div class="col-md-12">
@@ -101,8 +101,8 @@
                                     </div>
 
                                 </div>
-                                <label style="color:#3fbfb2 !important">Gender : </label>
-                                <label style="color:#3fbfb2 !important; margin-right:5px;"></label>
+                                <label style="color:#9351D6 !important">Gender : </label>
+                                <label style="color:#9351D6 !important; margin-right:5px;"></label>
                                 
                                 <% if(typeof user.gender !== 'undefined') { %>
                                    <label class="radio-inline">
@@ -121,14 +121,14 @@
 
 
                                 <div class="" style="margin-top:20px">
-                                <label style="color:#3fbfb2 !important">Mantra</label><br>
+                                <label style="color:#9351D6 !important">Mantra</label><br>
                                     <textarea name="mantra" id="mantra" class="form-control input-lg" rows="5" placeholder="Short Description"><%= user.mantra %></textarea>
                                 </div>
                                 
                                 <div>
-                                    <label style="color:#3fbfb2 !important">Add Profile Photo</label><br>
+                                    <label style="color:#9351D6 !important">Add Profile Photo</label><br>
                                     <input type="hidden" id="user-image" value="<%= user.userImage %>">
-                                    <button class="btn btn-lg add-btn" style="background-color:#3fbfb2 !important; color:white" type="button">Add Profile Image</button>
+                                    <button class="btn btn-lg add-btn" style="background-color:#9351D6 !important; color:white" type="button">Add Profile Image</button>
                                     <input type="file" class="form-control" name="upload" id="add-input" style="display: none">
                                     <span id="completed"></span>
                                 </div>

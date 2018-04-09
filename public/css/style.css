@@ -6,7 +6,7 @@ body {
 }
 
 .navbar{
-    background-color: #3fbfb2;
+    background-color: #9351D6;
 }
 
 .navbar-default .navbar-brand{
@@ -18,19 +18,19 @@ body {
 
 .navbar-brand:hover{
     color: #ffffff !important;
-    background-color: #3fbfb2 !important;
+    background-color: #9351D6 !important;
 }
 
 .navbar-default .navbar-nav > li > a{
     color: #fff !important;
-    background-color: #3fbfb2 !important;
+    background-color: #9351D6 !important;
     font-size: 16px;
     font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #fff !important;
-    background-color: #3fbfb2 !important;
+    background-color: #9351D6 !important;
 }
 
 #custom-search-input {
@@ -85,7 +85,7 @@ body {
 }
 
 .input-btn {
-    background: #3fbfb2;
+    background: #9351D6;
     border-top-right-radius: 25px !important;
     border-bottom-right-radius: 25px !important;
     padding-left: 23px;
@@ -106,7 +106,7 @@ body {
 }
 
 .add-apply{
-    background: #3fbfb2;
+    background: #9351D6;
     width: 100%;
     text-shadow: none;
     color: #ffffff !important;
@@ -149,7 +149,7 @@ body {
 }
 
 .dropdown-tag {
-    background: #3fbfb2;
+    background: #9351D6;
     color: white;
     padding: 4px;
     margin-bottom: 15px;

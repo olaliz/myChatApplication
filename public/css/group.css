@@ -25,7 +25,7 @@ h3 {
 }
 
 .navbar{
-    background: #3fbfb2;
+    background: #9351D6;
 }
 
 .navbar-default .navbar-brand {
@@ -38,23 +38,23 @@ h3 {
 
 .navbar-brand:hover{
     color: #fff !important;
-    background-color: #3fbfb2;
+    background-color: #9351D6;
 }
 
 .navbar-default .navbar-nav > li > a {
     color: #fff !important;
-    background-color: #3fbfb2;
+    background-color: #9351D6;
     font-size: 16px;
     font-weight: bold;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
     color: #fff !important;
-    background-color: #3fbfb2;
+    background-color: #9351D6;
 }
 
 .dropdown-toggle:active, .open .dropdown-toggle {
-    background:#3fbfb2 !important; 
+    background:#9351D6 !important; 
     border: none !important;
     color:#000 !important;
 }
@@ -68,7 +68,7 @@ h3 {
     border: medium none;
     outline: 0;
     font-size: 17px;
-    color: #3fbfb2;
+    color: #9351D6;
 }
 
 .new_message_head button:focus {
@@ -131,7 +131,7 @@ h3 {
 .chat-name{
     font-size: 17px;
     font-weight: 600;
-    color: #3fbfb2;
+    color: #9351D6;
 }
 
 .message_write {
@@ -307,7 +307,7 @@ member_list li:hover {
 }
 
 .name, .friends, #numOfFriends, .club_name, .club_fans{
-    color: #3fbfb2 !important;
+    color: #9351D6 !important;
 }
 
 .bl {
@@ -339,11 +339,11 @@ member_list li:hover {
 }
 
 .modal-title{
-    color: #3fbfb2;
+    color: #9351D6;
 }
 
 #nameLink, .btn_close{
-    background-color: #3fbfb2 !important;
+    background-color: #9351D6 !important;
     color: white !important;
 }
 
@@ -366,7 +366,7 @@ member_list li:hover {
 #val{
     cursor: pointer;
     text-decorator: none;
-    color: #3fbfb2;
+    color: #9351D6;
 }
 
 .nav-label-icon {
@@ -394,7 +394,7 @@ member_list li:hover {
 }
 
 .dropdown-tag {
-    background: #3fbfb2;
+    background: #9351D6;
     color: white;
     padding: 4px;
     margin-bottom: 15px;
@@ -419,7 +419,7 @@ member_list li:hover {
 }
 
 .drop-accept {
-    background: #3fbfb2 !important;
+    background: #9351D6 !important;
     border: #3bb5ec;
     color: white !important;
     text-shadow: none;

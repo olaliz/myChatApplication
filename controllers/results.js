@@ -30,7 +30,7 @@ module.exports = function(async, Lifestyle, Users){
                     dataChunk.push(res1.slice(i, i+chunkSize));
                 }
                 
-                res.render('results', {title: 'WeChat - Results', user: req.user, chunks: dataChunk});
+                res.render('results', {title: 'lizochat - Results', user: req.user, chunks: dataChunk});
            })
         },
         
@@ -50,7 +50,7 @@ module.exports = function(async, Lifestyle, Users){
                     dataChunk.push(res1.slice(i, i+chunkSize));
                 }
                 
-                res.render('students', {title: 'WeChat - Students', user: req.user, chunks: dataChunk});
+                res.render('students', {title: 'lizochat - Students', user: req.user, chunks: dataChunk});
            })
         },
         
@@ -72,7 +72,7 @@ module.exports = function(async, Lifestyle, Users){
                     dataChunk.push(res1.slice(i, i+chunkSize));
                 }
                 
-                res.render('students', {title: 'WeChat - Students', user: req.user, chunks: dataChunk});
+                res.render('students', {title: 'lizochat - Students', user: req.user, chunks: dataChunk});
             })
         }
     }
