@@ -5,19 +5,17 @@ module.exports = function(_, passport, User){
      return{
           SetRouting: function(router){
           
-          //get routing
+          //get routing events
               router.get('/', this.indexPage);
               router.get('/signup', this.getSignUp);
-              router.get('/auth/facebook', this.getFacebookLogin);
-              router.get('/auth/facebook/callback', this.facebookLogin);
               router.get('/auth/google', this.getGoogleLogin);
               router.get('/auth/google/callback', this.googleLogin);
               
               
               
-              //post routing
-              router.post('/', User.LoginValidation, this.postLogin);
-              router.post('/signup', User.SignUpValidation, this.postSignUp);
+              //post routing events
+              router.post('/', User.LoginValidation, this.Loginposting);
+              router.post('/signup', User.SignUpValidation, this.SignUpposting);
             },
             
             indexPage: function(req, res){
@@ -25,10 +23,10 @@ module.exports = function(_, passport, User){
                 return res.render('index', {title: 'lizochat | Login', messages: errors, hasErrors: errors.length > 0});
             },
             
-            postLogin: passport.authenticate('local.login', {
-                 successRedirect: '/home',
-                 failureRedirect: '/',
-                 failureFlash: true
+            Loginposting: passport.authenticate('local.login', {
+                 successRedirect: '/home',  //if successful take user to home page
+                 failureRedirect: '/',     //if not seccessful remain on index page
+                 failureFlash: true        //flash failure message
             }),
             
             
@@ -37,15 +35,13 @@ module.exports = function(_, passport, User){
                return res.render('signup', {title: 'lizochat | SignUp', messages: errors, hasErrors: errors.length > 0});
           },
             
-            postSignUp: passport.authenticate('local.signup', {
+            SignUpposting: passport.authenticate('local.signup', {
                  successRedirect: '/home',
                  failureRedirect: '/signup',
                  failureFlash: true
             }),
             
-            getFacebookLogin: passport.authenticate('facebook', {
-                scope: 'email'
-            }),
+            
             
             getGoogleLogin: passport.authenticate('google', {
                 scope: ['https://www.googleapis.com/auth/plus.login',
@@ -58,10 +54,5 @@ module.exports = function(_, passport, User){
                  failureFlash: true
             }),
             
-            facebookLogin: passport.authenticate('facebook', {
-                 successRedirect: '/home',
-                 failureRedirect: '/signup',
-                 failureFlash: true
-            })
         }
     }
